@@ -19,7 +19,7 @@ body {
 }
 @media screen and (min-width: 650px) {
   .header-wrap {
-    padding-top: 39px;
+    padding: 39px 20px 0;
   }
 }
 
@@ -636,13 +636,13 @@ body {
   display: block;
   background-color: rgba(252, 240, 227, 0.4);
   padding: 50px 15px;
+  position: relative;
 }
 @media screen and (min-width: 650px) {
   .inbox {
     padding: 142px 9% 101px;
     display: flex;
     justify-content: space-between;
-    position: relative;
   }
 }
 
