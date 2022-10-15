@@ -37,20 +37,36 @@
     }
 
     @include large-screan {
-        padding: 30px 7%;
+        padding: 20px 9.3%;
         background-color: white;
         flex-wrap: nowrap;
+        justify-content: space-between;
 
         .customers__row {
             align-items: flex-start;
             flex: 1;
-            justify-content: space-around;
+            justify-content: space-between;
+
         }
 
         &__icon-wrap {
             padding: 0;
             border: none;
             max-width: fit-content;
+
+            .customers__icon[alt="Apple"] {
+                margin-right: 100px;
+            }
+
+            .customers__icon[alt="Mashable"] {
+                margin-left: 3px;
+            }
         }
+    }
+}
+
+.second-customers {
+    @include middle-screan {
+        padding: 34px 9.3% 20px;
     }
 }

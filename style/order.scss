@@ -5,19 +5,21 @@
 
     &__imagine {
         display: block;
-        width: 62.5%;
+        width: 68.5%;
         margin: 0 auto 40px;
 
     }
 
     @include middle-screan {
-        padding: 75px 15px;
+        padding: 73px 15px;
         display: flex;
         justify-content: center;
 
         &__imagine {
             max-width: 270px;
-            margin: 0 8.6% 0 0;
+            margin: 0 8.5% 0 0;
+            position: relative;
+            right: 5px;
         }
     }
 }
@@ -38,13 +40,15 @@
         font-weight: 400;
         font-size: 22px;
         line-height: 32px;
-        margin: 0 0 40px;
+        margin: 0 0 80px;
     }
 
     @include middle-screan {
+        padding-top: 33px;
+
         &__title {
             text-align: left;
-            margin-bottom: 12px;
+            margin-bottom: 20px;
         }
 
         &__text {
@@ -60,7 +64,7 @@
         height: 48px;
         border: 1px solid rgba(43, 41, 45, 0.2);
         margin-bottom: 12px;
-        padding-left: 15px;
+        padding: 15px;
     }
 
     &__input::placeholder {
@@ -94,6 +98,7 @@
         &__input {
             max-width: 385px;
             margin-right: 10px;
+            margin-bottom: 10px;
         }
 
         &__input::placeholder {

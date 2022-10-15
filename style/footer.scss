@@ -1,9 +1,11 @@
 .footer {
-    padding-top: 40px;
+    padding-top: 23px;
     padding-bottom: 23px;
     background-color: white;
 
     @include middle-screan {
+        padding-top: 32px;
+
         .product-company {
             box-sizing: border-box;
             display: inline-block;
@@ -18,40 +20,47 @@
         padding-bottom: 15px;
 
         .apps {
-            margin-left: 9.2%;
+            margin-left: 8.9%;
             text-align: left;
 
             .icon {
+                margin-top: 0;
                 display: flex;
+                flex-direction: row;
+                padding: 8px 0;
 
                 &__text-wrap {
                     margin-top: 0;
-                    margin-left: 15px;
+                    margin-left: 9px;
                     align-self: center;
 
 
                     .icon__name {
                         text-align: left;
+                        line-height: 19px;
                     }
 
                     .icon__description {
+                        display: block;
                         text-align: left;
+                        line-height: 34px;
                     }
                 }
             }
 
             &__text-p {
                 display: block;
-                max-width: 299px;
+                max-width: 335px;
                 font-weight: 400;
                 font-size: 18px;
                 line-height: 26px;
                 color: $font-color;
                 opacity: 0.6;
+                margin: 9px 0 31px 4px;
             }
 
             &-wrap {
-                margin: 25px 0;
+                margin: 25px 0 47px 5px;
             }
         }
 
@@ -64,11 +73,9 @@
             width: 100%;
         }
 
-
-
         .product-company {
             display: block;
-            margin: 2px auto 0 9%;
+            margin: 10px auto 0 10.8%;
             list-style-type: none;
             padding: 0;
             width: 265px;
@@ -85,9 +92,12 @@
                 font-size: 18px;
                 line-height: 30px;
                 color: rgba(43, 41, 45, 0.6);
+                margin-bottom: 6px;
             }
 
             &__a {
+                // display: block;
+
                 text-decoration: none;
                 color: $font-color;
                 opacity: 0.6;
@@ -101,11 +111,26 @@
         }
 
         .footer__menu {
-            margin: 5px 129px 0 132px;
+            margin: 4px 132px 0 115px;
             flex-direction: row;
             justify-content: space-between;
             flex-grow: 1;
             height: 22px;
+
+            &-icons {
+                margin: 23px 0 0;
+                align-items: flex-end;
+
+                .footer__social-icon {
+                    vertical-align: text-top;
+                }
+
+                a:last-child {
+                    margin-bottom: 1px;
+                }
+            }
+
+
         }
 
     }
@@ -118,9 +143,11 @@
     text-align: center;
 
     .icon {
+        flex-direction: column;
 
         &__text-wrap {
-            margin-top: 20px;
+            margin-top: 11px;
+            margin-left: 0;
         }
 
         &__name {
@@ -133,6 +160,7 @@
         }
 
         &__description {
+            display: block;
             font-weight: 400;
             font-size: 18px;
             line-height: 25px;
@@ -147,7 +175,7 @@
     }
 
     &-wrap {
-        margin: 31px auto 40px;
+        margin: 24px auto 36px;
         display: flex;
         justify-content: space-between;
         width: 261px;
@@ -173,6 +201,7 @@
         font-size: 18px;
         line-height: 30px;
         color: rgba(43, 41, 45, 0.6);
+        margin-bottom: 6px;
     }
 
     &__a {
@@ -182,12 +211,16 @@
     }
 }
 
+.company {
+    margin-bottom: 0;
+}
+
 .long-line {
     display: none;
 }
 
 .footer__menu {
-    margin-top: 30px;
+    margin-top: 27px;
     display: flex;
     flex-direction: column;
     height: 70px;
@@ -220,5 +253,9 @@
         display: flex;
         justify-content: space-between;
         width: 97px;
+
+        .footer__social-icon {
+            vertical-align: -webkit-baseline-middle;
+        }
     }
 }

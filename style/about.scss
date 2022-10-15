@@ -25,21 +25,31 @@
     }
 
     &__text {
+        margin: 8px 0 12px;
         font-weight: 400;
         font-size: 22px;
         line-height: 32px;
     }
 
     @include middle-screan {
-        padding: 77px 9% 76px 9%;
+        padding: 77px 9% 74px 9.3%;
         flex-direction: row;
+
+        &__title {
+            display: block;
+            margin: 0 0 8px;
+        }
+
+        &__text {
+            margin: 0;
+        }
 
         &__text-wrap:last-child {
             margin-top: 0;
             margin-left: 29px;
 
             .about__text {
-                margin-bottom: 0;
+                margin: 0;
             }
         }
     }

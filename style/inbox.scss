@@ -2,11 +2,11 @@
     width: 100%;
     display: block;
     background-color: rgba(252, 240, 227, 0.4);
-    padding: 50px 15px;
+    padding: 26px 15px 48px;
     position: relative;
 
     @include middle-screan {
-        padding: 142px 9% 101px;
+        padding: 118px 7.3% 100px 13.8%;
         display: flex;
         justify-content: space-between;
     }
@@ -15,9 +15,11 @@
 .inbox-img-wrap {
     max-width: 425px;
     flex: 1 1;
+    padding-top: 25px;
 
     &__img {
         width: 100%;
+        margin-bottom: 12px;
     }
 
     &__text {
@@ -54,7 +56,7 @@
 }
 
 .inbox-content {
-    padding-top: 32px;
+    padding-top: 16px;
     flex: 1 1;
 
     &__red-title {
@@ -77,6 +79,7 @@
         font-weight: 400;
         font-size: 24px;
         line-height: 34px;
+        letter-spacing: 0.11px;
         margin: 0 0 30px;
     }
 
@@ -86,8 +89,8 @@
         padding: 0;
 
         &__red-title {
-            margin: 0 0 24px 0;
-            padding-left: 30px;
+            margin: 0 0 23px 0;
+            padding-left: 31px;
         }
 
         &__main-title {
@@ -95,13 +98,14 @@
             line-height: 56px;
             letter-spacing: -0.5px;
             margin: 0 0 30px 0;
-            padding-left: 30px;
+            padding-left: 29px;
         }
 
         &__text {
-            max-width: 487px;
+            max-width: 495px;
             margin: 0 0 44px;
-            padding-left: 30px;
+            padding-left: 31px;
+            letter-spacing: 0.05px;
         }
     }
 }
@@ -117,11 +121,13 @@
         font-weight: 400;
         font-size: 20px;
         line-height: 28px;
-        margin: 0 0 26px;
+        margin: 0 0 29px;
     }
 
     @include middle-screan {
-        padding: 30px;
+        width: 519px;
+        padding: 30px 30px 25px;
+        margin-left: 3px;
     }
 }
 
@@ -140,7 +146,8 @@
         width: auto;
         font-weight: 700;
         font-size: 16px;
-        line-height: 22px;
+        font-style: normal;
+        line-height: 19px;
         margin: 0;
     }
 
@@ -150,5 +157,9 @@
         font-size: 16px;
         line-height: 22px;
         color: rgba(43, 41, 45, 0.6);
+    }
+
+    @include large-screan {
+        margin-left: -1px;
     }
 }

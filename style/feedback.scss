@@ -2,7 +2,7 @@
     width: 100%;
     display: block;
     position: relative;
-    padding: 39px 15px 50px;
+    padding: 39px 15px 46px;
     border-bottom: 1px solid #E3E3E3;
     ;
 
@@ -17,8 +17,8 @@
         &__img {
             max-width: 273px;
             position: absolute;
-            bottom: 0;
-            right: 26px;
+            bottom: 2px;
+            right: 25px;
             z-index: -1;
         }
     }
@@ -75,7 +75,7 @@
 }
 
 .circles-wrap {
-    width: 75px;
+    width: 72px;
     display: flex;
     justify-content: space-between;
     margin: 0 auto 40px;
@@ -95,9 +95,16 @@
             background-color: $blue-color;
             opacity: 1;
         }
+
     }
 
     @include middle-screan {
+        width: 51px;
         margin-bottom: 0;
+
+        &__circle {
+            width: 9px;
+            height: 9px;
+        }
     }
 }
