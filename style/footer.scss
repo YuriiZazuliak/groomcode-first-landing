@@ -1,147 +1,157 @@
 .footer {
-    padding-top: 25px;
+    padding-top: 30px;
     padding-bottom: 23px;
     background-color: white;
 
-    @include middle-screan {
-        padding-top: 32px;
+    .icon {
+        flex-direction: column;
 
-        .product-company {
-            box-sizing: border-box;
-            display: inline-block;
-            width: 45%;
-            vertical-align: top;
+        &__svg {
+            margin-left: 5px;
+            width: 67px;
+
         }
-    }
 
-    @include large-screan {
-        display: flex;
-        flex-wrap: wrap;
-        padding-bottom: 15px;
+        @include middle-screan {
+            padding-top: 32px;
 
-        .apps {
-            margin-left: 8.9%;
-            text-align: left;
+            .product-company {
+                box-sizing: border-box;
+                display: inline-block;
+                width: 45%;
+                vertical-align: top;
+            }
+        }
 
-            .icon {
-                margin-top: 0;
-                display: flex;
-                flex-direction: row;
-                padding: 8px 0;
+        @include large-screan {
+            display: flex;
+            flex-wrap: wrap;
+            padding-bottom: 15px;
 
-                &__svg {
-                    align-self: flex-start;
-                    margin-top: 3px;
+            .apps {
+                margin-left: 8.9%;
+                text-align: left;
+
+                .icon {
+                    margin-top: 0;
+                    display: flex;
+                    flex-direction: row;
+                    padding: 8px 0;
+
+                    &__svg {
+                        align-self: flex-start;
+                        margin-top: 3px;
+                    }
+
+                    &__text-wrap {
+                        margin-top: 12px;
+                        margin-left: 9px;
+                        align-self: center;
+
+
+                        .icon__name {
+                            text-align: left;
+                            line-height: 19px;
+                        }
+
+                        .icon__description {
+                            display: block;
+                            text-align: left;
+                            line-height: 34px;
+                        }
+                    }
                 }
 
-                &__text-wrap {
-                    margin-top: 12px;
-                    margin-left: 9px;
-                    align-self: center;
+                &__text-p {
+                    display: block;
+                    max-width: 335px;
+                    font-weight: 400;
+                    font-size: 18px;
+                    line-height: 26px;
+                    color: $font-color;
+                    opacity: 0.6;
+                    margin: 17px 0 31px 4px;
+                }
 
-
-                    .icon__name {
-                        text-align: left;
-                        line-height: 19px;
-                    }
-
-                    .icon__description {
-                        display: block;
-                        text-align: left;
-                        line-height: 34px;
-                    }
+                &-wrap {
+                    margin: 25px 0 47px 5px;
                 }
             }
 
-            &__text-p {
+            .small-line {
+                display: none;
+            }
+
+            .long-line {
+                display: inline;
+                width: 100%;
+            }
+
+            .product-company {
                 display: block;
-                max-width: 335px;
-                font-weight: 400;
-                font-size: 18px;
-                line-height: 26px;
-                color: $font-color;
-                opacity: 0.6;
-                margin: 17px 0 31px 4px;
-            }
+                margin: 10px auto 0 10.8%;
+                list-style-type: none;
+                padding: 0;
+                width: 265px;
 
-            &-wrap {
-                margin: 25px 0 47px 5px;
-            }
-        }
-
-        .small-line {
-            display: none;
-        }
-
-        .long-line {
-            display: inline;
-            width: 100%;
-        }
-
-        .product-company {
-            display: block;
-            margin: 10px auto 0 10.8%;
-            list-style-type: none;
-            padding: 0;
-            width: 265px;
-
-            &__title {
-                font-weight: 700;
-                font-size: 22px;
-                line-height: 28px;
-                margin: 18px 0;
-            }
-
-            &__item {
-                font-weight: 400;
-                font-size: 18px;
-                line-height: 30px;
-                color: rgba(43, 41, 45, 0.6);
-                margin-bottom: 6px;
-            }
-
-            &__a {
-                // display: block;
-
-                text-decoration: none;
-                color: $font-color;
-                opacity: 0.6;
-            }
-        }
-
-        .company {
-            flex-grow: 1.5;
-            margin-left: 29px;
-            width: auto;
-        }
-
-        .footer__menu {
-            margin: 4px 132px 0 115px;
-            flex-direction: row;
-            justify-content: space-between;
-            flex-grow: 1;
-            height: 22px;
-
-            &-icons {
-                margin: 23px 0 0;
-                align-items: flex-end;
-
-                .footer__social-icon {
-                    vertical-align: text-top;
+                &__title {
+                    font-weight: 700;
+                    font-size: 22px;
+                    line-height: 28px;
+                    margin: 18px 0;
                 }
 
-                a:last-child {
-                    margin-bottom: 1px;
+                &__item {
+                    font-weight: 400;
+                    font-size: 18px;
+                    line-height: 30px;
+                    color: rgba(43, 41, 45, 0.6);
+                    margin-bottom: 6px;
+                }
+
+                &__a {
+                    // display: block;
+
+                    text-decoration: none;
+                    color: $font-color;
+                    opacity: 0.6;
                 }
             }
 
+            .company {
+                flex-grow: 1.5;
+                margin-left: 29px;
+                width: auto;
+            }
+
+            .footer__menu {
+                margin: 4px 132px 0 115px;
+                flex-direction: row;
+                justify-content: space-between;
+                flex-grow: 1;
+                height: 22px;
+
+                &-icons {
+                    margin: 23px 0 0;
+                    align-items: flex-end;
+
+                    .footer__social-icon {
+                        vertical-align: text-top;
+                    }
+
+                    a:last-child {
+                        margin-bottom: 1px;
+                    }
+                }
+
+
+            }
 
         }
+
+
 
     }
-
-
-
 }
 
 .apps {
