@@ -65,6 +65,7 @@ body {
     vertical-align: middle;
     width: 65px;
     height: 60px;
+    margin: 0;
   }
   .header .icon__text-wrap {
     display: inline-block;
@@ -169,9 +170,11 @@ body {
 }
 .icon__svg {
   vertical-align: middle;
+  width: 52px;
+  margin: -5px 0 0 5px;
 }
 .icon__text-wrap {
-  margin-left: 8px;
+  margin-left: 9px;
   margin-top: -5px;
 }
 .icon__name {
