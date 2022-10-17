@@ -4,7 +4,8 @@
     padding: 50px 15px 13px;
 
     @include large-screan {
-        padding: 108px 0 69px;
+        padding: 106px 0 69px;
+        background-color: rgba(0, 161, 198, 0.07);
     }
 }
 

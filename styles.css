@@ -75,11 +75,12 @@ body {
     font-style: normal;
     font-weight: 700;
     font-size: 20px;
-    line-height: 22px;
+    line-height: 29px;
     height: 25px;
     color: #2B292D;
   }
   .header .icon__description {
+    margin-top: 3px;
     display: block;
     font-weight: 400;
     font-size: 18px;
@@ -834,10 +835,10 @@ body {
   }
 }
 
-.comunications {
-  padding: 37px 15px 17px;
+.communication {
+  padding: 37px 15px 17px 15px;
 }
-.comunications__line {
+.communication__line {
   width: 149px;
   background: #000000;
   opacity: 0.1;
@@ -845,10 +846,10 @@ body {
   margin-bottom: 33px;
 }
 @media screen and (min-width: 650px) {
-  .comunications {
+  .communication {
     padding: 111px 9% 81px;
   }
-  .comunications__line {
+  .communication__line {
     margin: 0 1px;
     margin-top: 26px;
     margin-bottom: 40px;
@@ -984,7 +985,8 @@ body {
 }
 @media screen and (min-width: 950px) {
   .audience {
-    padding: 108px 0 69px;
+    padding: 106px 0 69px;
+    background-color: rgba(0, 161, 198, 0.07);
   }
 }
 
@@ -1396,7 +1398,7 @@ body {
 }
 @media screen and (min-width: 650px) {
   .order {
-    padding: 73px 15px;
+    padding: 74px 15px 73px;
     display: flex;
     justify-content: center;
   }
@@ -1484,7 +1486,7 @@ body {
 }
 
 .footer {
-  padding-top: 23px;
+  padding-top: 25px;
   padding-bottom: 23px;
   background-color: white;
 }
@@ -1515,8 +1517,12 @@ body {
     flex-direction: row;
     padding: 8px 0;
   }
+  .footer .apps .icon__svg {
+    align-self: flex-start;
+    margin-top: 3px;
+  }
   .footer .apps .icon__text-wrap {
-    margin-top: 0;
+    margin-top: 12px;
     margin-left: 9px;
     align-self: center;
   }
@@ -1537,7 +1543,7 @@ body {
     line-height: 26px;
     color: #2B292D;
     opacity: 0.6;
-    margin: 9px 0 31px 4px;
+    margin: 17px 0 31px 4px;
   }
   .footer .apps-wrap {
     margin: 25px 0 47px 5px;
@@ -1604,8 +1610,11 @@ body {
 .apps .icon {
   flex-direction: column;
 }
+.apps .icon__svg {
+  margin-left: 5px;
+}
 .apps .icon__text-wrap {
-  margin-top: 11px;
+  margin-top: 20px;
   margin-left: 0;
 }
 .apps .icon__name {
