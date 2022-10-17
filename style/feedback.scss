@@ -11,13 +11,13 @@
     }
 
     @include middle-screan {
-        padding: 46px 15px 66px;
+        padding: 47px 15px 64px;
         text-align: center;
 
         &__img {
             max-width: 273px;
             position: absolute;
-            bottom: 2px;
+            bottom: -1px;
             right: 25px;
             z-index: -1;
         }

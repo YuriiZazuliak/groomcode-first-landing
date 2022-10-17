@@ -489,7 +489,7 @@ body {
 
 @media screen and (min-width: 650px) {
   .second-customers {
-    padding: 34px 9.3% 20px;
+    padding: 33px 9.3% 20px;
   }
 }
 
@@ -504,21 +504,21 @@ body {
 @media screen and (min-width: 650px) {
   .features {
     background-color: white;
-    padding: 77px 9% 108px;
+    padding: 77px 9% 110px;
     overflow-x: hidden;
   }
   .features .featurs__half-pic {
     display: block;
     position: absolute;
     max-width: 9%;
-    top: 337px;
+    top: 335px;
     left: 0;
     z-index: 0;
   }
   .features .featurs__menu-picture {
     display: block;
     position: absolute;
-    top: 79px;
+    top: 77px;
     left: 698px;
   }
 }
@@ -689,7 +689,7 @@ body {
 }
 @media screen and (min-width: 650px) {
   .inbox {
-    padding: 118px 7.3% 100px 13.8%;
+    padding: 116px 7.3% 101px 13.8%;
     display: flex;
     justify-content: space-between;
   }
@@ -847,7 +847,7 @@ body {
 }
 @media screen and (min-width: 650px) {
   .communication {
-    padding: 111px 9% 81px;
+    padding: 110px 9% 80px;
   }
   .communication__line {
     margin: 0 1px;
@@ -985,7 +985,7 @@ body {
 }
 @media screen and (min-width: 950px) {
   .audience {
-    padding: 106px 0 69px;
+    padding: 107px 0 71px;
     background-color: rgba(0, 161, 198, 0.07);
   }
 }
@@ -1129,13 +1129,13 @@ body {
 }
 @media screen and (min-width: 650px) {
   .feedback {
-    padding: 46px 15px 66px;
+    padding: 47px 15px 64px;
     text-align: center;
   }
   .feedback__img {
     max-width: 273px;
     position: absolute;
-    bottom: 2px;
+    bottom: -1px;
     right: 25px;
     z-index: -1;
   }
@@ -1271,7 +1271,7 @@ body {
     margin: 0 0 27px;
   }
   .hiring-more__text {
-    margin: 0 auto 31px;
+    margin: 0 auto 33px;
     max-width: 555px;
   }
   .hiring-more__button {
@@ -1355,10 +1355,11 @@ body {
     flex: 1;
   }
   .hiring-list-item__location {
+    font-size: 18px;
     max-width: 229px;
     margin: 0 33px 0 0;
     flex: 1;
-    letter-spacing: 1px;
+    letter-spacing: 0px;
   }
   .hiring-list-item__arrow {
     width: auto;
@@ -1398,7 +1399,7 @@ body {
 }
 @media screen and (min-width: 650px) {
   .order {
-    padding: 74px 15px 73px;
+    padding: 73px 15px 73px;
     display: flex;
     justify-content: center;
   }
